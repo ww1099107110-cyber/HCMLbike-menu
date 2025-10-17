@@ -1,1 +1,38 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>HR.勞安.資訊</title><style>body{font-family:Arial;padding:40px;}h1{margin-bottom:30px;}ul{list-style:none;padding:0;}li{margin:10px 0;}a{color:#007bff;text-decoration:none;font-size:18px;}a:hover{text-decoration:underline;}</style></head><body><h1>HR.勞安.資訊</h1><ul><li><a href="https://docs.google.com/spreadsheets/d/1qVEJ7rmnPGMaoPJpdJABz-_TNpLKRwh2UKdYj_w0k6s/edit?gid=1152829011#gid=1152829011" target="_blank">新竹班表</a></li><li><a href="https://docs.google.com/spreadsheets/d/1qrTepju2388bSLl_kHciPAgJjrWzrcsHpMA1atkxWcQ/edit?gid=1713952999#gid=1713952999" target="_blank">苗栗班表</a></li><li><a href="https://docs.google.com/spreadsheets/d/1XKy0dYPIaZ_bjjp962x4LBivdKOlWB6JKYiJVcugjOU/edit?gid=324270093#gid=324270093" target="_blank">苗栗預排班表</a></li><li><a href="https://login.aoacloud.com.tw/Home/DeskAuthIndex?redirect=https%3A%2F%2Ferp3.aoacloud.com.tw%2FHR%2FHRHB007S00.aspx" target="_blank">震旦雲</a></li><li><a href="https://datacenter.giant.com.tw/Payroll/?originalController=OtherFunction&originalAction=TimeClock" target="_blank">電子班表</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSetiVe9clpc4wLVL58Mlvj678o6LmniipGTUKR9L2G3KjnnRQ/viewform" target="_blank">制服申請</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkLOnbsAbJ7jNto-o0ylokSpcieretAQrfonZw0liauew_gQ/viewform" target="_blank">職安體格檢查與職前教育登記</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdB8Zj35I-o00hnNxpxGRc36D9lYR1S_SmVBL60TXJOAZWGzw/viewform" target="_blank">新人報到進度表(前台)</a></li><li><a href="https://docs.google.com/spreadsheets/d/17MQkG9fVeq9oJD9DZcRrIwnzec91tk4Sf0IOGJScB2k/edit?gid=1466221492#gid=1466221492" target="_blank">新人報到進度表(後台)</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdbG6Fpa-5Kv9lXpiGdHJlm015eWUYNgQ7fAaL1E_wzXiaZcg/viewform" target="_blank">健保及勞退異動申請表單</a></li><li><a href="https://docs.google.com/spreadsheets/d/1QEzuvxFdCNGNKm6010iZAU0q-ou-vgTSmAxsutNBAPA/edit?gid=0#gid=0" target="_blank">竹苗平板資訊</a></li><li><a href="https://docs.google.com/spreadsheets/d/1Q3cyIBQPJ9SolLbeoRM-6AYDGHDSE8KMKziUI__WMbU/edit?gid=1394746369#gid=1394746369" target="_blank">竹竹苗維調清冊</a></li></ul></body></html>
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>HR.勞安.資訊</title><style>body{font-family:Arial;padding:40px;}h1{margin-bottom:30px;}ul{list-style:none;padding:0;}li{margin:10px 0;}a{color:#007bff;text-decoration:none;font-size:18px;}a:hover{text-decoration:underline;}</style>
+<style>
+  body.night-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  .card.night-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+  }
+  .toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+</style>
+
+<script>
+  function toggleNightMode() {
+    document.body.classList.toggle('night-mode');
+    document.querySelectorAll('.card').forEach(el => el.classList.toggle('night-mode'));
+    localStorage.setItem('nightMode', document.body.classList.contains('night-mode'));
+  }
+  window.onload = function() {
+    if (localStorage.getItem('nightMode') === 'true') {
+      document.body.classList.add('night-mode');
+      document.querySelectorAll('.card').forEach(el => el.classList.add('night-mode'));
+    }
+  }
+</script>
+</head><body><button class="toggle-button" onclick="toggleNightMode()">切換夜間模式</button><h1>HR.勞安.資訊</h1><ul><li><a href="https://docs.google.com/spreadsheets/d/1qVEJ7rmnPGMaoPJpdJABz-_TNpLKRwh2UKdYj_w0k6s/edit?gid=1152829011#gid=1152829011" target="_blank">新竹班表</a></li><li><a href="https://docs.google.com/spreadsheets/d/1qrTepju2388bSLl_kHciPAgJjrWzrcsHpMA1atkxWcQ/edit?gid=1713952999#gid=1713952999" target="_blank">苗栗班表</a></li><li><a href="https://docs.google.com/spreadsheets/d/1XKy0dYPIaZ_bjjp962x4LBivdKOlWB6JKYiJVcugjOU/edit?gid=324270093#gid=324270093" target="_blank">苗栗預排班表</a></li><li><a href="https://login.aoacloud.com.tw/Home/DeskAuthIndex?redirect=https%3A%2F%2Ferp3.aoacloud.com.tw%2FHR%2FHRHB007S00.aspx" target="_blank">震旦雲</a></li><li><a href="https://datacenter.giant.com.tw/Payroll/?originalController=OtherFunction&originalAction=TimeClock" target="_blank">電子班表</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSetiVe9clpc4wLVL58Mlvj678o6LmniipGTUKR9L2G3KjnnRQ/viewform" target="_blank">制服申請</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfkLOnbsAbJ7jNto-o0ylokSpcieretAQrfonZw0liauew_gQ/viewform" target="_blank">職安體格檢查與職前教育登記</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdB8Zj35I-o00hnNxpxGRc36D9lYR1S_SmVBL60TXJOAZWGzw/viewform" target="_blank">新人報到進度表(前台)</a></li><li><a href="https://docs.google.com/spreadsheets/d/17MQkG9fVeq9oJD9DZcRrIwnzec91tk4Sf0IOGJScB2k/edit?gid=1466221492#gid=1466221492" target="_blank">新人報到進度表(後台)</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdbG6Fpa-5Kv9lXpiGdHJlm015eWUYNgQ7fAaL1E_wzXiaZcg/viewform" target="_blank">健保及勞退異動申請表單</a></li><li><a href="https://docs.google.com/spreadsheets/d/1QEzuvxFdCNGNKm6010iZAU0q-ou-vgTSmAxsutNBAPA/edit?gid=0#gid=0" target="_blank">竹苗平板資訊</a></li><li><a href="https://docs.google.com/spreadsheets/d/1Q3cyIBQPJ9SolLbeoRM-6AYDGHDSE8KMKziUI__WMbU/edit?gid=1394746369#gid=1394746369" target="_blank">竹竹苗維調清冊</a></li></ul></body></html>
